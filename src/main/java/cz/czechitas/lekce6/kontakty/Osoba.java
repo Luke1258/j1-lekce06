@@ -69,6 +69,7 @@ public class Osoba {
      */
     private void pridejEmail(String email) {
         //TODO
+        emaily.add(email);
     }
 
     /**
@@ -79,7 +80,7 @@ public class Osoba {
      */
     private boolean obsahujeEmail(String email) {
         //TODO
-        return false;
+        return emaily.contains(email);
     }
 
     /**
@@ -88,6 +89,7 @@ public class Osoba {
      */
     private void pridejTelefon(String telefon) {
         //TODO
+        telefony.add(telefon);
     }
 
     /**
@@ -96,6 +98,7 @@ public class Osoba {
      */
     private void odstranTelefon(String telefon) {
         //TODO
+        telefony.remove(telefon);
     }
 
     /**
@@ -103,7 +106,7 @@ public class Osoba {
      */
     private boolean jeSeznamTelefonuPrazdny() {
         //TODO
-        return false;
+        return telefony.isEmpty();
     }
 
     /**
@@ -111,6 +114,7 @@ public class Osoba {
      */
     private void smazVsechnyTelefony() {
         //TODO
+        telefony.removeAll(telefony);
     }
 
     /**
@@ -119,6 +123,7 @@ public class Osoba {
      */
     private void pridejDite(String jmeno) {
         //TODO
+        deti.add(jmeno);
     }
 
     /**
@@ -128,7 +133,7 @@ public class Osoba {
      */
     private boolean jeNaSeznamuDite(String jmeno) {
         //TODO
-        return false;
+        return deti.contains(jmeno);
     }
 
     /**
@@ -141,7 +146,7 @@ public class Osoba {
      */
     private int kolikateJe(String jmeno) {
         //TODO
-        return 0;
+        return deti.indexOf(jmeno);
     }
 
     /**
@@ -151,6 +156,9 @@ public class Osoba {
      */
     private void vypisDeti() {
         //TODO bonusový úkol
+        for (String dietatko : deti) {
+            System.out.println("Zoznam deti: " + dietatko);
+        }
         //Pro výpis jednoho dítěte se použije System.out.println()
         //Pro průchod celým seznamem se použije for each cyklus (s dvojtečkou) – po zadání "deti.for" IntelliJ Ieda napoví.
         //Pozor, nejde o metodu forEach()!

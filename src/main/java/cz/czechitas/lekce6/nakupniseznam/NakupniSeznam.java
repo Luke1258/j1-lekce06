@@ -28,6 +28,10 @@ public class NakupniSeznam {
      */
     private void naplnSeznam() {
         //TODO
+        seznam.add(new Polozka("maslo", 3, "ks"));
+        seznam.add(new Polozka("chlieb", 5, "ks"));
+        seznam.add(new Polozka("mlieko", 4, "ks"));
+        seznam.add(new Polozka("tvaroh", 1, "ks"));
     }
 
     /**
@@ -37,6 +41,7 @@ public class NakupniSeznam {
      */
     private Polozka ziskejTretiPolozku() {
         //TODO
+        seznam.get(2);
         return null;
     }
 
@@ -45,6 +50,7 @@ public class NakupniSeznam {
      */
     private void smazDruhouPolozku() {
         //TODO
+        seznam.remove(1);
     }
 
     /**
@@ -52,6 +58,7 @@ public class NakupniSeznam {
      */
     private void pridejDalsiPolozku() {
         //TODO
+        seznam.add(new Polozka("chlieb", 5, "ks"));
     }
 
     @Override
